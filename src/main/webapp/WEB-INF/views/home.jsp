@@ -22,13 +22,8 @@
 	
 	</form:form>
 	<br/>
-	<hr/>
+	<hr>
 	<br/>
-	
-	
-	
-	
-	
 	<table>
 		<thead>
 			<tr>
