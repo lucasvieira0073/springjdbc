@@ -24,7 +24,7 @@ public class HomeController implements Serializable{
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public ModelAndView home() {
-		ModelAndView modelAndView = new ModelAndView("home");
+		ModelAndView modelAndView = new ModelAndView("cadastro");
 		
 		List<Produto> produtos = new ArrayList<>();
 		
@@ -47,7 +47,7 @@ public class HomeController implements Serializable{
 	
 	@RequestMapping(value="/", method=RequestMethod.POST)
 	public ModelAndView salvar(Produto produto) {
-		ModelAndView modelAndView = new ModelAndView("home");
+		ModelAndView modelAndView = new ModelAndView("cadastro");
 		
 		List<Produto> produtos = new ArrayList<>();
 		
@@ -70,7 +70,7 @@ public class HomeController implements Serializable{
 	
 	@RequestMapping(value="editar/{id}", method=RequestMethod.GET)
 	public ModelAndView editar(@PathVariable("id") Integer id) {
-		ModelAndView modelAndView = new ModelAndView("home");
+		ModelAndView modelAndView = new ModelAndView("cadastro");
 
 		
 		Produto produto = produtoDao.buscaPorId(id);
